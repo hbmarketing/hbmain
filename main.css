@@ -5,13 +5,16 @@
 }
 
 .main__nowrap-left {
-}
-
-.main__nowrap-left--header {
     box-sizing: border-box;
     width: 120px;
     min-width: 120px;
 }
+
+/* .main__nowrap-left--header {
+    box-sizing: border-box;
+    width: 120px;
+    min-width: 120px;
+} */
 
 .main__wanna-button {
     display: inline-block;
@@ -35,6 +38,8 @@
 
 .main__nowrap-right {
     flex-grow: 1;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 
 .main__wanna-list {
@@ -68,13 +73,9 @@
 
 @media screen and (min-width: 800px) {
     .main__nowrap-left {
-        box-sizing: border-box;
         width: 50%;
+        padding-right: 40px;
         text-align: right;
-    }
-    
-    .main__nowrap-left--header {
-        padding-right: 2.5rem;
     }
 
     .main__wanna-button {
@@ -94,7 +95,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .main__nowrap-left--header {
+    .main__nowrap-left {
         padding-right: 100px;
     }
 
