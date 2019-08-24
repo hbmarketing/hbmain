@@ -149,11 +149,29 @@ body {
     display: none;
 }
 
+.burger__checkbox:checked ~ .burger__elem {
+    width: 23px;
+    transform: rotate(45deg);
+}
+
+.burger__checkbox:checked ~ .burger__elem::before {
+    width: 23px;
+    transform: translate(0, 0) rotate(-90deg);
+}
+
+.burger__checkbox:checked ~ .burger__elem::after {
+    width: 23px;
+    transform: translate(0, -2px) rotate(-90deg);
+}
+
+.header__nav-burger {
+    margin-right: 20px;
+}
+
 .burger__elem {
     display: inline-block;
     width: 20px;
     height: 2px;
-    margin-right: 10px;
     vertical-align: middle;
     background-color: #fff;
     transition: all 500ms ease-in-out;
@@ -177,21 +195,6 @@ body {
     background-color: #fff;
     transform: translate(0, 6px);
     transition: all 500ms ease-in-out;
-}
-
-.burger__checkbox:checked ~ .burger__elem {
-    width: 23px;
-    transform: rotate(45deg);
-}
-
-.burger__checkbox:checked ~ .burger__elem::before {
-    width: 23px;
-    transform: translate(0, 0) rotate(-90deg);
-}
-
-.burger__checkbox:checked ~ .burger__elem::after {
-    width: 23px;
-    transform: translate(0, -2px) rotate(-90deg);
 }
 
 .shtora {
@@ -232,7 +235,7 @@ body {
     }
 
     .header__nav-elem--cta {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     
     .header__nav-elem--cta:hover,
